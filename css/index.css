@@ -17,3 +17,312 @@ a{
     text-decoration: none;
     color: #333;
 }
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+h2{
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Bagel Fat One', system-ui;
+}
+
+/* 네비게이션 */
+
+#menu{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(0,0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+}
+#menu .logo{
+    width: 200px;
+    height: 50px;
+}
+#menu .logo img{
+    width: 100%;
+    height: 100%;
+}
+#menu .nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    text-align: center;
+}
+#menu .nav li{
+    width: 15%;
+}
+#menu .nav li a{
+    color: white;
+    font-size: x-large;
+    font-family: 'Gasoek One', sans-serif;
+}
+#menu .nav li a:hover{
+    color: #0AFE96;
+}
+.active{
+    color:#0AFE96;
+}
+
+
+/* 홈 */
+
+
+#home {
+    width: 100%;
+    height: 685px;
+}
+#home .container img{
+    margin-top: 85px;
+    width: 100%;
+    height: 600px;
+}
+
+
+/* 뉴스 */
+
+
+#news{
+    padding: 100px 0;
+    width: 100%;
+    height: 650px;
+}
+
+#news .container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+#news .textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Gasoek One', sans-serif;
+    letter-spacing: 15px;
+
+
+}
+#news .videoBox{
+    width: 50%;
+    
+}
+#news .videoBox video{
+    width: 100%;
+}
+
+
+
+
+
+/* 어바웃 */
+
+#about{
+    padding: 100px 0;
+    width: 100%;
+    height: 2000px;
+}
+.lpBox{
+    text-align: center;
+}
+.lpBox img{
+    animation: rotateLp 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+@keyframes rotateLp {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#about .aboutImage{
+    width: 1200px;
+    height: 600px;
+    position: relative;
+}
+#about .aboutImage .slide{
+    width: 100%;
+    height: 100%;
+}
+#about .aboutImage .slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#about .aboutImage .slide li:not(:first-of-type){
+    display: none;
+}
+#about .aboutImage .slide li img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* 타임테이블 */
+
+#timetable{
+    width: 100%;
+    height: 800px;
+    padding: 100px 0;
+}
+#timetable .container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+#timetable h2{
+    width: 100%;
+   }
+.left{
+    margin-top: 100px;
+   width: 500px;
+   height: 500px;
+   text-align: center;
+   transition: 1.5s;
+   position: relative;
+   transform-style: preserve-3d;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.left:hover{
+    transform: rotateY(180deg);
+}
+.right{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    transition: 1.5s;
+    position: relative;
+    transform-style: preserve-3d;
+ }
+ .right:hover{
+    transform: rotateY(180deg);
+}
+#timetable img{
+    width: 500px;
+    height: 500px;
+}
+
+
+/* 아티스트 */
+
+#artist{
+    padding: 100px 0;
+    width: 100%;
+    height: 800px;
+}
+#artist h2{
+    width: 1500px;
+    margin: 0 auto;
+}
+#artist .artistList1{
+    background-image: url(../img/artist1.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 200px;
+    margin: 2% 0;
+    animation: artistRight 3000s linear infinite;
+    cursor: pointer;
+}
+#artist .artistList2{
+    width: 100%;
+    background-image: url(../img/artist2.png);
+    background-repeat: repeat-x;
+    height: 50px;
+}
+#artist .artistList3{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/artist3.jpg);
+    background-repeat: repeat-x;
+    margin: 2% 0;
+    animation: artistLeft 2500s linear infinite;
+    cursor: pointer;
+}
+
+
+/* 애니메이션 */
+
+@keyframes artistRight {
+    0%{background-position: 0 0;}
+    100%{background-position: -100000px 0;}
+    
+}
+@keyframes artistLeft {
+    0%{background-position: 0 0;}
+    100%{background-position: 100000px;}
+}
+
+
+/* 콘텐츠 */
+
+#content{
+    width: 100%;
+    height: 1050px;
+    padding: 100px 0;
+}
+#content .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+#content h2{
+    width: 100%;
+}
+#content .contentBox{
+    margin: 3%;
+    width: 300px;
+    height: 300px;
+}
+
+/* 풋터 */
+
+footer{
+    width: 100%;
+    height: 520px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer h2{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer .footer_logo{
+    margin: 1%;
+}
+footer .footer_logo img{
+    width: 230px;
+    height: 280px;
+}
+footer .icon{
+    margin: 1%;
+}
+.icon span{
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 10px;
+    font-family:'Gasoek One', sans-serif;
+}
+.icon img{
+    margin: 0 10px;
+    vertical-align: middle;
+}
