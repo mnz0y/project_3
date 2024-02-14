@@ -6,9 +6,13 @@
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 
-    /* font-family: 'Bagel Fat One', system-ui;
+    /* font-family: "Black Han Sans", sans-serif;
+    font-family: "Hahmlet", serif;
+    font-family: 'Bagel Fat One', system-ui;
     font-family: 'Gasoek One', sans-serif;
     font-family: 'Noto Sans KR', sans-serif; */
+    
+      
 }
 ul, li, ol{
     list-style-type: none;
@@ -18,7 +22,7 @@ a{
     color: #333;
 }
 .container{
-    width: 1200px;
+    width: 1500px;
     margin: 0 auto;
 }
 h2{
@@ -61,12 +65,12 @@ h2{
 #menu .nav li a{
     color: white;
     font-size: x-large;
-    font-family: 'Gasoek One', sans-serif;
+    font-family: "Black Han Sans", sans-serif;
 }
 #menu .nav li a:hover{
     color: #0AFE96;
 }
-.active{
+#menu .nav li a.active{
     color:#0AFE96;
 }
 
@@ -91,7 +95,7 @@ h2{
 #news{
     padding: 100px 0;
     width: 100%;
-    height: 650px;
+    height: 700px;
 }
 
 #news .container{
@@ -106,15 +110,19 @@ h2{
     font-size: 60px;
     font-family: 'Gasoek One', sans-serif;
     letter-spacing: 15px;
-
-
+    transform: translateX(-500px);
+    transition: all 5s;
+    opacity: 0;
 }
+
+
 #news .videoBox{
     width: 50%;
     
 }
 #news .videoBox video{
     width: 100%;
+    height: 100%;
 }
 
 
@@ -126,10 +134,16 @@ h2{
 #about{
     padding: 100px 0;
     width: 100%;
-    height: 2000px;
+    height: 2435px;
+    background-image:url(../img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
 }
 .lpBox{
     text-align: center;
+  
 }
 .lpBox img{
     animation: rotateLp 6s linear infinite;
@@ -141,11 +155,59 @@ h2{
     }
     
 }
+#about .aboutText{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2%;
+    overflow: hidden;
+}
+#about .aboutText p{
+    margin: 1% 0;
+}
+#about .aboutText p:nth-child(1){
+width: 50%;
+font-size: 33px;
+font-family: "Hahmlet", serif;
+font-weight: 900;
+line-height: 55px;
+transform: translateX(-500px);
+transition: all 5s;
+opacity: 0;
+}
+#about .aboutText p:nth-child(2){
+width: 50%;
+font-size: 30px;
+font-weight: 500;
+line-height: 44px;
+text-align: justify;
+font-family: "Black Han Sans", sans-serif;
+transform: translateX(500px);
+transition: all 5s;
+opacity: 0;
+}
+#about .aboutText p:nth-child(4){
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    transform: translateY(-150px);
+    transition: all 3s;
+    opacity: 0;
 
+}
+#about .aboutText p:nth-child(5){
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    transform: translateY(-150px);
+    transition: all 3s;
+    opacity: 0;
+
+}
 #about .aboutImage{
-    width: 1200px;
+    width: 1500px;
     height: 600px;
     position: relative;
+    margin: 2% 0;
 }
 #about .aboutImage .slide{
     width: 100%;
@@ -163,7 +225,50 @@ h2{
     width: 100%;
     height: 100%;
 }
+#about .aboutText2{
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    margin-top: 100px;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    overflow: hidden;
+}
+.aboutText2 dl{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    height: 33.3%;
+    margin: 0 auto;
+}
+.aboutText2 dt{
+    text-decoration: line-through;
+    width: 40%;
+    padding-top: 5%;
+    font-size: 40px;
+    font-family: "Hahmlet", serif;
+    transform: translateY(150px);
+    transition: all 3s;
+    opacity: 0;
+    color: tomato;
+}
 
+.aboutText2 dd{
+    width: 60%;
+    padding-top: 5%;
+    font-family: "Hahmlet", serif;
+    font-size: 35px;
+    font-weight: 700;
+    transform: translateY(150px);
+    transition: all 3s;
+    opacity: 0;
+}
+
+.aboutText2 dl:nth-child(2) dt{
+    padding:0 ;
+}
 
 
 
@@ -171,7 +276,7 @@ h2{
 
 #timetable{
     width: 100%;
-    height: 800px;
+    height: 900px;
     padding: 100px 0;
 }
 #timetable .container{
@@ -184,8 +289,8 @@ h2{
    }
 .left{
     margin-top: 100px;
-   width: 500px;
-   height: 500px;
+   width: 600px;
+   height: 600px;
    text-align: center;
    transition: 1.5s;
    position: relative;
@@ -205,8 +310,8 @@ h2{
 }
 .right{
     margin-top: 100px;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     text-align: center;
     transition: 1.5s;
     position: relative;
@@ -216,8 +321,8 @@ h2{
     transform: rotateY(180deg);
 }
 #timetable img{
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 
@@ -226,7 +331,7 @@ h2{
 #artist{
     padding: 100px 0;
     width: 100%;
-    height: 800px;
+    height: 850px;
 }
 #artist h2{
     width: 1500px;
@@ -240,6 +345,9 @@ h2{
     margin: 2% 0;
     animation: artistRight 3000s linear infinite;
     cursor: pointer;
+    transform: translate(500px, -100px);
+    transition: linear 2s;
+    opacity: 0;
 }
 #artist .artistList2{
     width: 100%;
@@ -255,6 +363,9 @@ h2{
     margin: 2% 0;
     animation: artistLeft 2500s linear infinite;
     cursor: pointer;
+    transform: translate(-500px, -100px);
+    transition: linear 2s;
+    opacity: 0;
 }
 
 
@@ -297,7 +408,7 @@ h2{
 
 footer{
     width: 100%;
-    height: 520px;
+    height: 450px;
     background-color: black;
     color: white;
     text-align: center;
@@ -307,11 +418,11 @@ footer h2{
     font-family: 'Noto Sans KR', sans-serif;
 }
 footer .footer_logo{
-    margin: 1%;
+    margin: 2%;
 }
 footer .footer_logo img{
-    width: 230px;
-    height: 280px;
+    width: 130px;
+    height: 180px;
 }
 footer .icon{
     margin: 1%;
