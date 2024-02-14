@@ -113,6 +113,11 @@ h2{
     transform: translateX(-500px);
     transition: all 5s;
     opacity: 0;
+    color:transparent;
+    background: linear-gradient(45deg,#E7D84E,#28B39F,#C7A3C9,#F76427,#99572E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 
@@ -332,6 +337,7 @@ opacity: 0;
     padding: 100px 0;
     width: 100%;
     height: 850px;
+    overflow: hidden;
 }
 #artist h2{
     width: 1500px;
