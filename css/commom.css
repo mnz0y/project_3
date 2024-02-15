@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: "Black Han Sans", sans-serif;
+    font-family: "Hahmlet", serif;
+    font-family: 'Bagel Fat One', system-ui;
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif; */
+}
+
+ul, li, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+h2{
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Bagel Fat One', system-ui;
+}
+
+/* 네비게이션 */
+
+#menu{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(0,0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+}
+#menu .logo{
+    width: 200px;
+    height: 50px;
+}
+#menu .logo img{
+    width: 100%;
+    height: 100%;
+}
+#menu .nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    text-align: center;
+}
+#menu .nav li{
+    width: 15%;
+}
+#menu .nav li a{
+    color: white;
+    font-size: x-large;
+    font-family: "Black Han Sans", sans-serif;
+}
+#menu .nav li a:hover{
+    color: #0AFE96;
+}
+#menu .nav li a.active{
+    color:#0AFE96;
+}
+
+
+
+
+
+/* 풋터 */
+
+footer{
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer h2{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+footer .footer_logo{
+    margin: 2%;
+}
+footer .footer_logo img{
+    width: 130px;
+    height: 180px;
+}
+footer .icon{
+    margin: 1%;
+}
+.icon span{
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 10px;
+    font-family:'Gasoek One', sans-serif;
+}
+.icon img{
+    margin: 0 10px;
+    vertical-align: middle;
+}

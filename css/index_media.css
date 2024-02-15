@@ -374,4 +374,334 @@ opacity: 0;
     opacity: 1;
 }
 
+/* 데스크탑 */
+@media (min-width:1100px) and (max-width:1516px){
+
+    /* 홈 */
+#home .container{
+width: 100%;    
+}
+
+/* 뉴스 */
+
+#news .container{
+    width: 100%;
+    padding: 0 2%;
+}
+
+#news .textBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+
+
+/* 어바웃 */
+#about {
+    height: auto;
+}
+#about .container{
+    width: 100%;
+    padding: 0 2%;
+}
+.lpBox{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+.lpBox img{
+    width: 100%;
+    height: 100%;
+}
+
+#about .aboutText{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 2%;
+    overflow: hidden;
+}
+#about .aboutText p{
+    margin: 1% 0;
+}
+#about .aboutText p:nth-child(1){
+width: 50%;
+font-size: 33px;
+font-family: "Hahmlet", serif;
+font-weight: 900;
+line-height: 55px;
+transform: translateX(-500px);
+transition: all 5s;
+opacity: 0;
+}
+#about .aboutText p:nth-child(2){
+width: 50%;
+font-size: 30px;
+font-weight: 500;
+line-height: 44px;
+text-align: justify;
+font-family: "Black Han Sans", sans-serif;
+transform: translateX(500px);
+transition: all 5s;
+opacity: 0;
+}
+#about .aboutText p:nth-child(4){
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    transform: translateY(-150px);
+    transition: all 3s;
+    opacity: 0;
+
+}
+#about .aboutText p:nth-child(5){
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    transform: translateY(-150px);
+    transition: all 3s;
+    opacity: 0;
+
+}
+#about .aboutImage{
+    width: 1500px;
+    height: 600px;
+    position: relative;
+    margin: 2% 0;
+}
+#about .aboutImage .slide{
+    width: 100%;
+    height: 100%;
+}
+#about .aboutImage .slide li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#about .aboutImage .slide li:not(:first-of-type){
+    display: none;
+}
+#about .aboutImage .slide li img{
+    width: 100%;
+    height: 100%;
+}
+#about .aboutText2{
+    width: 100%;
+    height: 500px;
+    background-color: #333;
+    margin-top: 100px;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    overflow: hidden;
+}
+.aboutText2 dl{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60%;
+    height: 33.3%;
+    margin: 0 auto;
+}
+.aboutText2 dt{
+    text-decoration: line-through;
+    width: 40%;
+    padding-top: 5%;
+    font-size: 40px;
+    font-family: "Hahmlet", serif;
+    transform: translateY(150px);
+    transition: all 3s;
+    opacity: 0;
+    color: tomato;
+}
+
+.aboutText2 dd{
+    width: 60%;
+    padding-top: 5%;
+    font-family: "Hahmlet", serif;
+    font-size: 35px;
+    font-weight: 700;
+    transform: translateY(150px);
+    transition: all 3s;
+    opacity: 0;
+}
+
+.aboutText2 dl:nth-child(2) dt{
+    padding:0 ;
+}
+
+
+
+/* 타임테이블 */
+
+#timetable{
+    width: 100%;
+    height: 900px;
+    padding: 100px 0;
+}
+
+#timetable h2{
+    width: 100%;
+   }
+.left{
+    float: left;
+    margin: 100px 0 0 50px;
+   width: 600px;
+   height: 600px;
+   text-align: center;
+   transition: 1.5s;
+   position: relative;
+   transform-style: preserve-3d;
+   cursor: pointer;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+    transform: rotateY(180deg);
+}
+.left:hover{
+    transform: rotateY(180deg);
+}
+.right{
+    float: right;
+    margin: 100px 50px 0 0;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    transition: 1.5s;
+    position: relative;
+    transform-style: preserve-3d;
+    cursor: pointer;
+ }
+ .right:hover{
+    transform: rotateY(180deg);
+}
+#timetable img{
+    width: 600px;
+    height: 600px;
+}
+
+
+/* 아티스트 */
+
+#artist{
+    padding: 100px 0;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+}
+#artist h2{
+    width: 1500px;
+    margin: 0 auto;
+}
+#artist .artistList1{
+    background-image: url(../img/artist1.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 200px;
+    margin: 2% 0;
+    animation: artistRight 3000s linear infinite;
+    cursor: pointer;
+    transform: translate(500px, -100px);
+    transition: linear 2s;
+    opacity: 0;
+}
+#artist .artistList2{
+    width: 100%;
+    background-image: url(../img/artist2.png);
+    background-repeat: repeat-x;
+    height: 50px;
+}
+#artist .artistList3{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/artist3.jpg);
+    background-repeat: repeat-x;
+    margin: 2% 0;
+    animation: artistLeft 2500s linear infinite;
+    cursor: pointer;
+    transform: translate(-500px, -100px);
+    transition: linear 2s;
+    opacity: 0;
+}
+
+
+/* 애니메이션 */
+
+@keyframes artistRight {
+    0%{background-position: 0 0;}
+    100%{background-position: -100000px 0;}
+    
+}
+@keyframes artistLeft {
+    0%{background-position: 0 0;}
+    100%{background-position: 100000px;}
+}
+
+
+/* 콘텐츠 */
+
+#content{
+    width: 100%;
+    height: 1050px;
+    padding: 100px 0;
+}
+#content .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+#content h2{
+    width: 100%;
+}
+#content .contentBox{
+    margin: 3%;
+    width: 300px;
+    height: 300px;
+    transform: translateY(150px);
+    transition: all 3s;
+    opacity: 0;
+    position: relative;
+}
+#content .contentBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease-in-out;
+}
+#content .contentBox p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 1%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+
+}
+#content .contentBox:nth-of-type(1) a:hover img{
+    filter: brightness(50%);
+}
+
+#content .contentBox a:hover p{
+    opacity: 1;
+}
+    
+}
 
