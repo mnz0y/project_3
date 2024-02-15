@@ -121,25 +121,25 @@ $('.artistImg').children().hover(function(){
 // 컨텐츠
 $(function(){
   $('.contentBox:eq(2)').hover(function(){
-    $(this).find('img').attr('src','../img/content3-1.jpg');
+    $(this).find('img').attr('src','img/content3-1.jpg');
   },
   function(){
     $(this).find('img').attr('src','img/content3.png');
   });
   $('.contentBox:eq(3)').hover(function(){
-    $(this).find('img').attr('src','../img/content4-1.jpg');
+    $(this).find('img').attr('src','img/content4-1.jpg');
   },
   function(){
     $(this).find('img').attr('src','img/content4.png');
   });
   $('.contentBox:eq(4)').hover(function(){
-    $(this).find('img').attr('src','../img/content5-1.jpg');
+    $(this).find('img').attr('src','img/content5-1.jpg');
   },
   function(){
     $(this).find('img').attr('src','img/content5.png');
   });
   $('.contentBox:eq(5)').hover(function(){
-    $(this).find('img').attr('src','../img/content6-1.jpg');
+    $(this).find('img').attr('src','img/content6-1.jpg');
   },
   function(){
     $(this).find('img').attr('src','img/content6.jpg');
