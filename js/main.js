@@ -64,6 +64,8 @@ $(function(){
 
     }
     let artist = $('.artistImg').offset().top;
+    let content1 = $('.contentBox:eq(0), .contentBox:eq(1), .contentBox:eq(2)');
+    let content2 = $('.contentBox:eq(3), .contentBox:eq(4), .contentBox:eq(5)');
     if( ws > artist-700 ){
       $('.aboutText p:nth-child(4)').css('transform','translateY(-150px)').css('opacity','0');
       $('.aboutText p:nth-child(5)').css('transform','translateY(-150px)').css('opacity','0');
@@ -71,8 +73,19 @@ $(function(){
       $('.aboutText2 dd').css('transform','translateY(150px)').css('opacity','0');
       $('.artistList1').css('transform','translate(0px, 0px)').css('opacity','1');
       $('.artistList3').css('transform','translate(0px, 0px)').css('opacity','1');
+      content1.css('transform','translateY(150px)').css('opacity','0');
+      content2.css('transform','translateY(150px)').css('opacity','0');
+    }
+
+    let content = $('.contentBox').offset().top;
+    if(ws > content-700){
+      $('.artistList1').css('transform','translate(500px,-100px)').css('opacity','0');
+      $('.artistList3').css('transform','translate(-500px,-100px)').css('opacity','0');
+      content1.css('transform','translateY(0px)').css('opacity','1');
+      content2.css('transform','translateY(0px)').css('opacity','1');
 
     }
+    
 
   
   });
@@ -103,4 +116,32 @@ $('.artistImg').children().hover(function(){
 }, function(){
     $(this).css('animation-play-state','running');
 });
+});
+
+// 컨텐츠
+$(function(){
+  $('.contentBox:eq(2)').hover(function(){
+    $(this).find('img').attr('src','../img/content3-1.jpg');
+  },
+  function(){
+    $(this).find('img').attr('src','img/content3.png');
+  });
+  $('.contentBox:eq(3)').hover(function(){
+    $(this).find('img').attr('src','../img/content4-1.jpg');
+  },
+  function(){
+    $(this).find('img').attr('src','img/content4.png');
+  });
+  $('.contentBox:eq(4)').hover(function(){
+    $(this).find('img').attr('src','../img/content5-1.jpg');
+  },
+  function(){
+    $(this).find('img').attr('src','img/content5.png');
+  });
+  $('.contentBox:eq(5)').hover(function(){
+    $(this).find('img').attr('src','../img/content6-1.jpg');
+  },
+  function(){
+    $(this).find('img').attr('src','img/content6.jpg');
+  });
 });
