@@ -118,6 +118,7 @@ footer .icon{
 
 /* 데스크탑 */
 @media (min-width:1100px) and (max-width:1516px){
+   
     /* 네비게이션 */
     #menu .nav{
         justify-content: space-around;
@@ -139,3 +140,177 @@ footer .icon{
     }
     
     }
+
+
+/* 테블릿사이즈 */
+@media (min-width:850px) and (max-width:1099px){
+    
+    /* 네비게이션 */
+
+#menu{
+    width: 100%;
+}
+#menu .logo{
+    width: 20%;
+}
+
+#menu .nav{
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 80%;
+}
+
+#menu .nav li a{
+    font-size: 19px;
+}
+
+
+
+/* 풋터 */
+
+footer{
+    height: auto;
+}
+footer .container{
+    width: 100%;
+    padding: 0 2%;
+}
+footer h2{
+    font-size: 25px;
+}
+footer h4{
+    margin: 3%;
+}
+footer .footer_logo img{
+    width: 100px;
+    height: 130px;
+}
+footer .icon{
+    margin: 3%;
+}
+footer .copyright{
+    font-size: 13px;
+}
+}
+
+/* 모바일 사이즈 */
+@media (min-width:500px) and (max-width:849px){
+    /* 네비게이션 */
+
+#menu{
+    width: 100%;
+    height: 100px;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 5px;
+}
+#menu .logo{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+#menu .logo img{
+    width: 100px;
+}
+
+#menu .nav{
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#menu .nav li{
+    width: 25%;
+}
+#menu .nav li a{
+    font-size: 17px;
+}
+
+
+/* 풋터 */
+
+footer{
+    height: auto;
+}
+footer .container{
+    width: 100%;
+    padding: 0 2%;
+}
+footer h2{
+    font-size: 25px;
+}
+footer h4{
+    margin: 3%;
+}
+footer .footer_logo img{
+    width: 100px;
+    height: 130px;
+}
+footer .icon{
+    margin: 3%;
+}
+footer .copyright{
+    font-size: 13px;
+}
+}
+
+/* 최소사이즈 */
+@media (max-width:499px){
+    /* 네비게이션 */
+
+#menu{
+    width: 100%;
+    height: 100px;
+    flex-flow: wrap;
+    align-items: center;
+    padding: 5px;
+}
+#menu .logo{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+#menu .logo img{
+    width: 100px;
+}
+
+#menu .nav{
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#menu .nav li{
+    width: 15%;
+}
+#menu .nav li a{
+    font-size: 18px;
+}
+
+
+/* 풋터 */
+
+footer{
+    height: auto;
+}
+footer .container{
+    width: 100%;
+    padding: 0 2%;
+}
+footer h2{
+    font-size: 25px;
+}
+footer h4{
+    margin: 3%;
+}
+footer .footer_logo img{
+    width: 100px;
+    height: 130px;
+}
+footer .icon{
+    margin: 3%;
+}
+footer .copyright{
+    font-size: 13px;
+}
+}

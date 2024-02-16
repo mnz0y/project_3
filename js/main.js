@@ -19,7 +19,7 @@ let nav = $("#menu .nav li");
       let wScroll = $(this).scrollTop();
 
       for (i = 0; i < nav.length; i++) {
-        if (wScroll >= contents.eq(i).offset().top) {
+        if (wScroll >= contents.eq(i).offset().top-10) {
           nav.find('a').removeClass("active");
           nav.find('a').eq(i).addClass("active");
         }
@@ -85,8 +85,6 @@ $(function(){
       content2.css('transform','translateY(0px)').css('opacity','1');
 
     }
-    
-
   
   });
 });
@@ -145,3 +143,13 @@ $(function(){
     $(this).find('img').attr('src','img/content6.jpg');
   });
 });
+
+
+// 미디어쿼리
+// function detectMediaSize(){
+//   if(window.matchMedia('(max-width:849px)').matches){
+//     $('.textBox').css('transform','translateX(0px)').css('opacity','1');
+//   }
+// }
+// window.addEventListener('resize',detectMediaSize,false);
+// detectMediaSize();
