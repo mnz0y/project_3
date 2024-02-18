@@ -151,5 +151,5 @@ $(function(){
 //     $('.textBox').css('transform','translateX(0px)').css('opacity','1');
 //   }
 // }
-// window.addEventListener('resize',detectMediaSize,false);
+// window.addEventListener('resize', detectMediaSize, false);
 // detectMediaSize();
