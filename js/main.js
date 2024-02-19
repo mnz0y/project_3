@@ -41,7 +41,11 @@ $(function(){
     }
     
     if(ws> news){
-      $('.textBox').css('transform','translateX(-500px)').css('opacity','0');
+      if(window.matchMedia('(max-width:849px)').matches){
+        $('.textBox').css('transform','translateX(0px)').css('opacity','1');
+      }else{
+        $('.textBox').css('transform','translateX(-500px)').css('opacity','0');
+      }      
       $('.aboutText p:first').css('transform','translateX(0px)').css('opacity','1');
       $('.aboutText p:nth-child(2)').css('transform','translateX(0px)').css('opacity','1');
       $('.aboutText p:nth-child(4)').css('transform','translateY(-150px)').css('opacity','0');
@@ -146,10 +150,10 @@ $(function(){
 
 
 // 미디어쿼리
-// function detectMediaSize(){
-//   if(window.matchMedia('(max-width:849px)').matches){
-//     $('.textBox').css('transform','translateX(0px)').css('opacity','1');
-//   }
-// }
-// window.addEventListener('resize', detectMediaSize, false);
-// detectMediaSize();
+function detectMediaSize(){
+  if(window.matchMedia('(max-width:849px)').matches){
+    $('.textBox').css('transform','translateX(0px)').css('opacity','1');
+  }
+}
+window.addEventListener('resize', detectMediaSize, false);
+detectMediaSize();
