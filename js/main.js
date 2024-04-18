@@ -13,9 +13,7 @@ let nav = $("#menu .nav li");
       $("html, body").animate({ scrollTop: offset }, 400);
     });
 
-
     $(window).scroll(function () {
-
       let wScroll = $(this).scrollTop();
 
       for (i = 0; i < nav.length; i++) {
